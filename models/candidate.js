@@ -34,6 +34,7 @@ const candidateSchema = new mongoose.Schema({
     },
     isSriLankanCitizen: { type: Boolean, required: true, default: false },
     isDualCitizen: { type: Boolean, required: true, default: false },
+    candidateImageUrl: { type: String, default: "" },
 
     // --- 2. Candidacy & Support Data ---
     candidacyType: {
@@ -43,6 +44,7 @@ const candidateSchema = new mongoose.Schema({
     },
     partyAffiliation: {
         partyName: String,
+        partySymbolUrl: { type: String, default: "" },
         secretarySignatureUrl: String,
     },
     legislativeHistory: {
